@@ -1,0 +1,153 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        background-color: #fff3d9;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        padding-top: 49px;
+        min-height: 100vh
+}
+
+nav {
+        background-color: #445d64;
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 15px 20px;
+                display: inline-block;
+                font-size: 1.2em;
+        }
+
+        a:hover {
+                background-color: #c8d1d9;
+                color: #000000;
+        }
+        p{
+                font-size: 2em;
+                padding: 15px 70px;
+        }
+}
+
+footer {
+        background-color: #b49e67;
+        bottom: 0;
+        width: 100%;
+        flex: 0%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: flex-start;
+        justify-items: right;
+        flex-wrap: wrap;
+        h6 {
+                font-size: 1.2em;
+                padding: 10px;
+        }
+        p {
+                font-size: 1em;
+        }
+}
+
+main {
+        background-color: #fff3d9;
+}
+
+.inicio {
+        background-color: #445d64;
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+        img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+        }
+
+        h1 {
+                font-size: 10em;
+                padding: 20px 20px 20px 70px;
+        }
+
+        p{
+                font-size: 1.5em;
+                padding-left: 70px;
+        }
+}
+
+
+.bienvenida {
+        background-color: #c8d1d9;
+        font-size: 2em;
+        text-align: center;
+        padding: 20px;
+}
+
+.informacion {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        img {
+                max-width: 50%;
+                height: auto;
+                display: block;
+        }
+}
+
+.ventajas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        align-items: center;
+        justify-items: center;
+        padding: 40px;
+
+        img {
+                max-width: 50%;
+                height: auto;
+                display: block;
+        }
+        p{
+                font-size: 1.3em;
+                text-align: center;
+                padding: 10px;
+        }
+}
+
+.titulo {
+        background-color: #d6c292;
+        font-size: 2em;
+        padding: 10px;
+        padding-left: 50px;
+
+}
+
+a {
+        text-decoration: none;
+        color: #000000;
+}
+
+h4 {
+        font-size: 1.5em;
+        padding: 10px;
+}
+p {
+        font-size: 1.3em;
+}
