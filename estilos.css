@@ -2,14 +2,17 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-size: 16px;
 }
 
 body {
         background-color: #fff3d9;
         display: grid;
-        grid-template-rows: auto auto 1fr auto;
-        padding-top: 49px;
-        min-height: 100vh
+        grid-template-rows: auto 1fr auto;
+        padding-top: 66px;
+        min-height: 100vh;
+        align-items: center;
+        justify-items: center;
 }
 
 nav {
@@ -35,7 +38,9 @@ nav {
                 background-color: #c8d1d9;
                 color: #000000;
         }
-        p{
+
+        h2 {
+                background-color: #445d64;
                 font-size: 2em;
                 padding: 15px 70px;
         }
@@ -43,7 +48,6 @@ nav {
 
 footer {
         background-color: #b49e67;
-        bottom: 0;
         width: 100%;
         flex: 0%;
         display: flex;
@@ -51,11 +55,12 @@ footer {
         padding: 10px;
         align-items: flex-start;
         justify-items: right;
-        flex-wrap: wrap;
-        h6 {
+
+        h5 {
                 font-size: 1.2em;
                 padding: 10px;
         }
+
         p {
                 font-size: 1em;
         }
@@ -71,7 +76,7 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        
+
         img {
                 max-width: 100%;
                 height: auto;
@@ -83,20 +88,27 @@ main {
                 padding: 20px 20px 20px 70px;
         }
 
-        p{
+        p {
                 font-size: 1.5em;
                 padding-left: 70px;
         }
+
+        
 }
 
+h2 {
+                background-color: #c8d1d9;
+                font-size: 2em;
+                text-align: center;
+                padding: 20px;
+        }
 
-.bienvenida {
-        background-color: #c8d1d9;
-        font-size: 2em;
-        text-align: center;
-        padding: 20px;
-}
-
+        h3 {
+                background-color: #d6c292;
+                font-size: 2em;
+                padding: 10px;
+                padding-left: 50px;
+        }
 .informacion {
         padding: 40px;
         display: grid;
@@ -114,30 +126,29 @@ main {
 .ventajas {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr auto auto;
-        align-items: center;
-        justify-items: center;
         padding: 40px;
+        text-align: center;
 
         img {
                 max-width: 50%;
                 height: auto;
                 display: block;
+                justify-self: center;
         }
-        p{
+
+        p {
                 font-size: 1.3em;
-                text-align: center;
                 padding: 10px;
         }
+
+        h4 {
+                font-size: 1.4em;
+        }
 }
 
-.titulo {
-        background-color: #d6c292;
-        font-size: 2em;
-        padding: 10px;
-        padding-left: 50px;
 
-}
+
+
 
 a {
         text-decoration: none;
@@ -148,6 +159,7 @@ h4 {
         font-size: 1.5em;
         padding: 10px;
 }
+
 p {
         font-size: 1.3em;
 }
