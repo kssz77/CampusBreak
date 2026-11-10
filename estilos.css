@@ -218,3 +218,61 @@ form {
         }
 
 }
+.contenedorproductos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 950px;
+        margin: 0 auto;
+}
+.producto {
+        background-color: #d6c292;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+        img {
+                width: 100%;
+                height: 180px;
+                object-fit: contain;
+                background-color: transparent;
+                border-radius: 8px;
+                display: block;
+                margin: 0 auto 10px auto;
+        }
+
+        h4 {
+                font-size: 1.2em;
+                margin-bottom: 8px;
+        }
+
+        p {
+                font-size: 0.95em;
+                margin-bottom: 8px;
+        }
+
+        button {
+                background-color: #c8d1d9;
+                padding: 8px 14px;
+                border-radius: 18px;
+                border: none;
+                transition: .3s ease;
+                cursor: pointer;
+        }
+        label {
+                font-size: 0.9em;
+        }
+        input[type="number"] {
+                width: 50px;
+                padding: 3px;
+                margin-bottom: 10px;
+        }
+
+        button:hover {
+                background-color: #445d64;
+                color: #ffffff;
+        }
+}
+

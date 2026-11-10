@@ -3,9 +3,165 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
         <title>Menú de Productos</title>
 </head>
-<body>
-        
+<body> 
+            <nav>
+                <h1>Campus Break</h1>
+                <div>
+                        <a href="index.html">Inicio</a>
+                        <a href="menu.html">Menú de Productos</a>
+                        <a href="carrito.html">Carrito de Compras</a>
+                        <a href="pedidos.html">Mis Pedidos</a>
+                        <a href="inicioSesion.html">Iniciar Sesión</a>
+                        <a href="registrarse.html">Registrarse</a>
+                </div>
+
+        </nav>
+        <header class="inicio">
+                <section class="Headertext">
+                        <h2>¿Cómo te gustaría disfrutar de tu descanso universitario?</h2>
+                        <p>En CampusBreak, te ofrecemos un espacio donde los buenos sabores se encuentran con grandes momentos,
+                                 haz tu pedido en línea y recibe tu comida caliente cuando llegue.</p>
+                </section>
+                <img src="./imagenes/capuchino-clasico.jpg" alt="Logo de Menu de Productos">
+
+        </header>
+        <main>
+                <h2>Menú de Productos</h2>
+                <section>
+                        <h3>FESTIN SALADO</h3>
+                        <div class="contenedorproductos">
+                                <article class="producto">
+                                        <img src="./imagenes/Empanada-queso.jpg" alt="Empanada de Queso">
+                                        <h4>Empanada de Queso</h4>
+                                        <p>Deliciosa empanada crujiente y dorada rellena de queso derretido.</p>
+                                        <p>Precio: $1.00</p>
+                                        <label for="cantidadEmpanada">Cantidad:</label>
+                                        <input type="number" id="cantidadEmpanada" name="cantidadEmpanada" min="1" value="1">   
+                                        <button type="button" onclick="agregarAlCarrito('Empanada de Queso', 1.00)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/Empanada-carne.jpg" alt="Empanada de Carne">
+                                        <h4>Empanada de Carne</h4>
+                                        <p>Deliciosa empanada crujiente y dorada rellena de carne sazonada.</p>
+                                        <p>Precio: $1.50</p>
+                                        <label for="cantidadEmpanadaCarne">Cantidad:</label>
+                                        <input type="number" id="cantidadEmpanadaCarne" name="cantidadEmpanadaCarne" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Empanada de Carne', 1.50)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/bolon-4-quesos.jpg" alt="Bolón de Queso">
+                                        <h4>Bolón de Queso</h4>
+                                        <p>Delicioso bolón relleno de queso.</p>
+                                        <p>Precio: $2.50</p>
+                                        <label for="cantidadBolonQueso">Cantidad:</label>
+                                        <input type="number" id="cantidadBolonQueso" name="cantidadBolonQueso" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Bolón de Queso', 2.50)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/Sándwich-mixto.jpg" alt="Sándwich de mixto">
+                                        <h4>Sándwich de mixto</h4>
+                                        <p>Delicioso sándwich relleno de jamón y queso.</p>
+                                        <p>Precio: $2.00</p>
+                                        <label for="cantidadSandwich">Cantidad:</label>
+                                        <input type="number" id="cantidadSandwich" name="cantidadSandwich" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Sándwich de mixto', 2.00)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/Sándwich-pollo.jpg" alt="Sándwich de Pollo">
+                                        <h4>Sándwich de Pollo</h4>
+                                        <p>Delicioso sándwich relleno de pollo asado y vegetales.</p>
+                                        <p>Precio: $2.50</p>
+                                        <label for="cantidadSandwichPollo">Cantidad:</label>
+                                        <input type="number" id="cantidadSandwichPollo" name="cantidadSandwichPollo" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Sándwich de Pollo', 2.50)">Agregar al Carrito</button>
+                                </article>
+                        </div>
+                </section>
+
+                <section>
+                        <h3>BEBIDAS SALUDABLES</h3>
+                        <div class="contenedorproductos">
+                                <article class="producto">
+                                        <img src="./imagenes/colada-morada.jpg" alt="Imagen de Colada Morada">
+                                        <h4>Colada Morada</h4>
+                                        <p>Refrescante bebida ideal para los días calurosos, hecha con ingredientes naturales.</p>
+                                        <p>Precio: $2.50</p>
+                                        <label for="cantidadColada">Cantidad:</label>
+                                        <input type="number" id="cantidadColada" name="cantidadColada" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Colada Morada', 2.50)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/batidos-frutas.jpg" alt="Imagen de Batidos de Frutas">
+                                        <h4>Batidos de Frutas</h4>
+                                        <p>Deliciosos batidos hechos con frutas frescas, ideales para una merienda saludable.</p>
+                                        <p>Precio: $2.00</p>
+                                        <label for="cantidadBatidos">Cantidad:</label>
+                                        <input type="number" id="cantidadBatidos" name="cantidadBatidos" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Batidos de Frutas', 2.00)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/te-helado.jpg" alt="Imagen de Té Helado">
+                                        <h4>Té Helado</h4>
+                                        <p>Refrescante té helado, perfecto para disfrutar en los días calurosos.</p>
+                                        <p>Precio: $1.00</p>
+                                        <label for="cantidadTe">Cantidad:</label>
+                                        <input type="number" id="cantidadTe" name="cantidadTe" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Té Helado', 1.00)">Agregar al Carrito</button>
+                                </article>
+                        </div>
+                </section>
+                <section>
+                        <h3>BEBIDAS SALUDABLES</h3>
+                        <div class="contenedorproductos">
+                                <article class="producto">
+                                        <img src="./imagenes/fresas-crema.jpg" alt="Imagen de Fresas con Crema">
+                                        <h4>Fresas con Crema</h4>
+                                        <p>Deliciosa bebida hecha con fresas frescas y crema, perfecta para una merienda saludable.</p>
+                                        <p>Precio: $1.50</p>
+                                        <label for="cantidadFresas">Cantidad:</label>
+                                        <input type="number" id="cantidadFresas" name="cantidadFresas" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Fresas con Crema', 1.50)">Agregar al Carrito</button>
+                                </article>
+
+                                <article class="producto">
+                                        <img src="./imagenes/Porcion-cake-chocolate.jpg" alt="Imagen de Porción de Cake de Chocolate">
+                                        <h4>Porción de Cake de Chocolate</h4>
+                                        <p>Deliciosa porción de cake de chocolate, perfecta para satisfacer tu antojo.</p>
+                                        <p>Precio: $2.00</p>
+                                        <label for="cantidadCake">Cantidad:</label>
+                                        <input type="number" id="cantidadCake" name="cantidadCake" min="1" value="1">
+                                        <button type="button" onclick="agregarAlCarrito('Porción de Cake de Chocolate', 2.00)">Agregar al Carrito</button>
+                                </article>
+                        </div>
+                </section>
+
+        </main>
+        <footer>
+                <section>
+                        <h2>CampusBreak</h2>
+                        <p>¡Aprovecha tu tiempo, disfruta tu descanso y deja que CampusBreak se encargue de tus pedidos!
+                        </p>
+                </section>
+                <section>
+                        <h2>Contactos</h2>
+                        <p>Teléfono: 123-456-7890</p>
+                        <p>Email: <a href="mailto:info@campusbreak.com">info@campusbreak.com</a></p>
+                        <p>Instagram: @campusbreak</p>
+                </section>
+                <section>
+                        <h2>Ubicación</h2>
+                        <p>Av. de por allá, calle de por acá</p>
+                </section>
+        </footer>
 </body>
+
 </html>
