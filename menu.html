@@ -40,7 +40,7 @@
                                         <p>Precio: $1.00</p>
                                         <label for="cantidadEmpanada">Cantidad:</label>
                                         <input type="number" id="cantidadEmpanada" name="cantidadEmpanada" min="1" value="1">   
-                                        <button type="button" onclick="agregarAlCarrito('Empanada de Queso', 1.00)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Empanada de Queso', 1.00, 'cantidadEmpanada')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -50,7 +50,7 @@
                                         <p>Precio: $1.50</p>
                                         <label for="cantidadEmpanadaCarne">Cantidad:</label>
                                         <input type="number" id="cantidadEmpanadaCarne" name="cantidadEmpanadaCarne" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Empanada de Carne', 1.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Empanada de Carne', 1.50, 'cantidadEmpanadaCarne')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -60,7 +60,7 @@
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadBolonQueso">Cantidad:</label>
                                         <input type="number" id="cantidadBolonQueso" name="cantidadBolonQueso" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Bolón de Queso', 2.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Bolón de Queso', 2.50, 'cantidadBolonQueso')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -70,7 +70,7 @@
                                         <p>Precio: $2.00</p>
                                         <label for="cantidadSandwich">Cantidad:</label>
                                         <input type="number" id="cantidadSandwich" name="cantidadSandwich" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Sándwich de mixto', 2.00)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Sándwich de mixto', 2.00, 'cantidadSandwich')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -80,13 +80,13 @@
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadSandwichPollo">Cantidad:</label>
                                         <input type="number" id="cantidadSandwichPollo" name="cantidadSandwichPollo" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Sándwich de Pollo', 2.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Sándwich de Pollo', 2.50, 'cantidadSandwichPollo')">Agregar al Carrito</button>
                                 </article>
                         </div>
                 </section>
 
                 <section>
-                        <h3>BEBIDAS y Cafés</h3>
+                        <h3>BEBIDAS y CAFÉS</h3>
                         <div class="contenedorproductos">
                                 <article class="producto">
                                         <img src="./imagenes/colada-morada.jpg" alt="Imagen de Colada Morada">
@@ -95,7 +95,7 @@
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadColada">Cantidad:</label>
                                         <input type="number" id="cantidadColada" name="cantidadColada" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Colada Morada', 2.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Colada Morada', 2.50, 'cantidadColada')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -105,7 +105,7 @@
                                         <p>Precio: $2.00</p>
                                         <label for="cantidadBatidos">Cantidad:</label>
                                         <input type="number" id="cantidadBatidos" name="cantidadBatidos" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Batidos de Frutas', 2.00)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Batidos de Frutas', 2.00, 'cantidadBatidos')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -115,7 +115,7 @@
                                         <p>Precio: $1.00</p>
                                         <label for="cantidadTe">Cantidad:</label>
                                         <input type="number" id="cantidadTe" name="cantidadTe" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Té Helado', 1.00)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Té Helado', 1.00, 'cantidadTe')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -125,7 +125,7 @@
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadCapuchino">Cantidad:</label>
                                         <input type="number" id="cantidadCapuchino" name="cantidadCapuchino" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Capuchino Clásico', 2.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Capuchino Clásico', 2.50, 'cantidadCapuchino')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -135,7 +135,7 @@
                                         <p>Precio: $1.50</p>
                                         <label for="cantidadCafe">Cantidad:</label>
                                         <input type="number" id="cantidadCafe" name="cantidadCafe" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Café Americano', 1.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Café Americano', 1.50, 'cantidadCafe')">Agregar al Carrito</button>
                                 </article>
                         </div>
                 </section>
@@ -149,7 +149,7 @@
                                         <p>Precio: $1.50</p>
                                         <label for="cantidadFresas">Cantidad:</label>
                                         <input type="number" id="cantidadFresas" name="cantidadFresas" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Fresas con Crema', 1.50)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Fresas con Crema', 1.50, 'cantidadFresas')">Agregar al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -159,10 +159,12 @@
                                         <p>Precio: $2.00</p>
                                         <label for="cantidadCake">Cantidad:</label>
                                         <input type="number" id="cantidadCake" name="cantidadCake" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Porción de Cake de Chocolate', 2.00)">Agregar al Carrito</button>
+                                        <button type="button" onclick="agregarAlCarrito('Porción de Cake de Chocolate', 2.00, 'cantidadCake')">Agregar al Carrito</button>
                                 </article>
                         </div>
                 </section>
+
+                <div id="notificacion" class="notificacion-flotante"></div>
 
         </main>
         <footer>
@@ -182,6 +184,7 @@
                         <p>Av. de por allá, calle de por acá</p>
                 </section>
         </footer>
+        <script src="codigo.js"></script>
 </body>
 
 </html>
