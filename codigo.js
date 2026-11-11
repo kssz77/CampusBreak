@@ -232,6 +232,14 @@ const pedido2 = document.getElementById("pedido2")
 const pedido3 = document.getElementById("pedido3")
 
 if (pedido1 && pedido2 && pedido3 && detalles) {
+    [pedido1, pedido2, pedido3].forEach(pedido => {
+        pedido.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                pedido.click();
+            }
+        });
+    });
 
     pedido1.addEventListener("click", function () {
 
