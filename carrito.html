@@ -38,20 +38,11 @@
                                 <option value="tarjeta">Tarjeta de Crédito / Débito</option>
                                 <option value="efectivo">Efectivo</option>
                                 </select>
-                        <br>
                         
-                        <label for="numeroTarjeta">Ingrese su Número de Tarjeta:</label>
-                        <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese su Número de Tarjeta" maxlength="16" required>
-                        <br>
-                        <label for="fechaExpiracion">Ingrese la Fecha de Expiración:</label>
-                        <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA" required>
-                        <br>
-                        <label for="codigoSeguridad">Ingrese el Código de Seguridad (CVV):</label>
-                        <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="3 dígitos" maxlength="3" required>
-                        <br>
+                        <p id="warnings" class="warnings"></p>
                         <button type="submit" id="finalizarCompra">Finalizar Compra</button>
                         <button type="button" id="cancelarCompra" onclick="window.location.href='menu.html'">Cancelar</button>
-                        <p id="warnings" class="warnings"></p>
+                        
                 </form>
         </main>
         <footer>
