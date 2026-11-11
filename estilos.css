@@ -82,12 +82,17 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    width: 100%;
+    right: 0;
 
     img {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: right center;
         display: block;
+        justify-self: end;
     }
 
     h1 {
@@ -516,6 +521,7 @@ button:focus,
     .inicio h1 {
         font-size: 3em;
         padding: 15px;
+        text-align: center;
     }
 
     .inicio h2 {
