@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos.css">
         <title>Menú de Productos</title>
 </head>
-<body> 
-            <nav>
-                <h1>Campus Break</h1>
+
+<body>
+        <nav>
+                <h2>Campus Break</h1>
                 <div>
                         <a href="index.html">Inicio</a>
                         <a href="menu.html">Menú de Productos</a>
@@ -22,15 +24,16 @@
         <header class="inicio">
                 <section class="Headertext">
                         <h2>¿Cómo te gustaría disfrutar de tu descanso universitario?</h2>
-                        <p>En CampusBreak, te ofrecemos un espacio donde los buenos sabores se encuentran con grandes momentos,
-                                 haz tu pedido en línea y recibe tu comida caliente cuando llegue.</p>
+                        <p>En CampusBreak, te ofrecemos un espacio donde los buenos sabores se encuentran con grandes
+                                momentos,
+                                haz tu pedido en línea y recibe tu comida caliente cuando llegue.</p>
                 </section>
                 <img src="./imagenes/capuchino-clasico.jpg" alt="Logo de Menu de Productos">
 
         </header>
-        <main>
-                <h2>Menú de Productos</h2>
-                <section>
+        <main class="menu">
+                <h1>Menú de Productos</h1>
+                <section class="menu">
                         <h3>FESTIN SALADO</h3>
                         <div class="contenedorproductos">
                                 <article class="producto">
@@ -39,8 +42,11 @@
                                         <p>Deliciosa empanada crujiente y dorada rellena de queso derretido.</p>
                                         <p>Precio: $1.00</p>
                                         <label for="cantidadEmpanada">Cantidad:</label>
-                                        <input type="number" id="cantidadEmpanada" name="cantidadEmpanada" min="1" value="1">   
-                                        <button type="button" onclick="agregarAlCarrito('Empanada de Queso', 1.00, 'cantidadEmpanada')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadEmpanada" name="cantidadEmpanada" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Empanada de Queso', 1.00, 'cantidadEmpanada')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -49,8 +55,11 @@
                                         <p>Deliciosa empanada crujiente y dorada rellena de carne sazonada.</p>
                                         <p>Precio: $1.50</p>
                                         <label for="cantidadEmpanadaCarne">Cantidad:</label>
-                                        <input type="number" id="cantidadEmpanadaCarne" name="cantidadEmpanadaCarne" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Empanada de Carne', 1.50, 'cantidadEmpanadaCarne')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadEmpanadaCarne" name="cantidadEmpanadaCarne"
+                                                min="1" value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Empanada de Carne', 1.50, 'cantidadEmpanadaCarne')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -59,8 +68,11 @@
                                         <p>Delicioso bolón relleno de queso.</p>
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadBolonQueso">Cantidad:</label>
-                                        <input type="number" id="cantidadBolonQueso" name="cantidadBolonQueso" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Bolón de Queso', 2.50, 'cantidadBolonQueso')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadBolonQueso" name="cantidadBolonQueso" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Bolón de Queso', 2.50, 'cantidadBolonQueso')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -69,8 +81,11 @@
                                         <p>Delicioso sándwich relleno de jamón y queso.</p>
                                         <p>Precio: $2.00</p>
                                         <label for="cantidadSandwich">Cantidad:</label>
-                                        <input type="number" id="cantidadSandwich" name="cantidadSandwich" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Sándwich de mixto', 2.00, 'cantidadSandwich')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadSandwich" name="cantidadSandwich" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Sándwich de mixto', 2.00, 'cantidadSandwich')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -79,33 +94,44 @@
                                         <p>Delicioso sándwich relleno de pollo asado y vegetales.</p>
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadSandwichPollo">Cantidad:</label>
-                                        <input type="number" id="cantidadSandwichPollo" name="cantidadSandwichPollo" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Sándwich de Pollo', 2.50, 'cantidadSandwichPollo')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadSandwichPollo" name="cantidadSandwichPollo"
+                                                min="1" value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Sándwich de Pollo', 2.50, 'cantidadSandwichPollo')">Agregar
+                                                al Carrito</button>
                                 </article>
                         </div>
                 </section>
 
-                <section>
+                <section class="menu">
                         <h3>BEBIDAS y CAFÉS</h3>
                         <div class="contenedorproductos">
                                 <article class="producto">
                                         <img src="./imagenes/colada-morada.jpg" alt="Imagen de Colada Morada">
                                         <h4>Colada Morada</h4>
-                                        <p>Refrescante bebida ideal para los días calurosos, hecha con ingredientes naturales.</p>
+                                        <p>Refrescante bebida ideal para los días calurosos, hecha con ingredientes
+                                                naturales.</p>
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadColada">Cantidad:</label>
-                                        <input type="number" id="cantidadColada" name="cantidadColada" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Colada Morada', 2.50, 'cantidadColada')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadColada" name="cantidadColada" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Colada Morada', 2.50, 'cantidadColada')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
                                         <img src="./imagenes/batidos-frutas.jpg" alt="Imagen de Batidos de Frutas">
                                         <h4>Batidos de Frutas</h4>
-                                        <p>Deliciosos batidos hechos con frutas frescas, ideales para una merienda saludable.</p>
+                                        <p>Deliciosos batidos hechos con frutas frescas, ideales para una merienda
+                                                saludable.</p>
                                         <p>Precio: $2.00</p>
                                         <label for="cantidadBatidos">Cantidad:</label>
-                                        <input type="number" id="cantidadBatidos" name="cantidadBatidos" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Batidos de Frutas', 2.00, 'cantidadBatidos')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadBatidos" name="cantidadBatidos" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Batidos de Frutas', 2.00, 'cantidadBatidos')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -115,7 +141,9 @@
                                         <p>Precio: $1.00</p>
                                         <label for="cantidadTe">Cantidad:</label>
                                         <input type="number" id="cantidadTe" name="cantidadTe" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Té Helado', 1.00, 'cantidadTe')">Agregar al Carrito</button>
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Té Helado', 1.00, 'cantidadTe')">Agregar al
+                                                Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -124,8 +152,11 @@
                                         <p>Delicioso capuchino hecho con café de alta calidad y leche espumosa.</p>
                                         <p>Precio: $2.50</p>
                                         <label for="cantidadCapuchino">Cantidad:</label>
-                                        <input type="number" id="cantidadCapuchino" name="cantidadCapuchino" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Capuchino Clásico', 2.50, 'cantidadCapuchino')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadCapuchino" name="cantidadCapuchino" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Capuchino Clásico', 2.50, 'cantidadCapuchino')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
@@ -135,31 +166,41 @@
                                         <p>Precio: $1.50</p>
                                         <label for="cantidadCafe">Cantidad:</label>
                                         <input type="number" id="cantidadCafe" name="cantidadCafe" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Café Americano', 1.50, 'cantidadCafe')">Agregar al Carrito</button>
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Café Americano', 1.50, 'cantidadCafe')">Agregar
+                                                al Carrito</button>
                                 </article>
                         </div>
                 </section>
-                <section>
+                <section class="menu">
                         <h3>POSTRES</h3>
                         <div class="contenedorproductos">
                                 <article class="producto">
                                         <img src="./imagenes/fresas-crema.jpg" alt="Imagen de Fresas con Crema">
                                         <h4>Fresas con Crema</h4>
-                                        <p>Deliciosa bebida hecha con fresas frescas y crema, perfecta para una merienda saludable.</p>
+                                        <p>Deliciosa bebida hecha con fresas frescas y crema, perfecta para una merienda
+                                                saludable.</p>
                                         <p>Precio: $1.50</p>
                                         <label for="cantidadFresas">Cantidad:</label>
-                                        <input type="number" id="cantidadFresas" name="cantidadFresas" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Fresas con Crema', 1.50, 'cantidadFresas')">Agregar al Carrito</button>
+                                        <input type="number" id="cantidadFresas" name="cantidadFresas" min="1"
+                                                value="1">
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Fresas con Crema', 1.50, 'cantidadFresas')">Agregar
+                                                al Carrito</button>
                                 </article>
 
                                 <article class="producto">
-                                        <img src="./imagenes/Porcion-cake-chocolate.jpg" alt="Imagen de Porción de Cake de Chocolate">
+                                        <img src="./imagenes/Porcion-cake-chocolate.jpg"
+                                                alt="Imagen de Porción de Cake de Chocolate">
                                         <h4>Porción de Cake de Chocolate</h4>
-                                        <p>Deliciosa porción de cake de chocolate, perfecta para satisfacer tu antojo.</p>
+                                        <p>Deliciosa porción de cake de chocolate, perfecta para satisfacer tu antojo.
+                                        </p>
                                         <p>Precio: $2.00</p>
                                         <label for="cantidadCake">Cantidad:</label>
                                         <input type="number" id="cantidadCake" name="cantidadCake" min="1" value="1">
-                                        <button type="button" onclick="agregarAlCarrito('Porción de Cake de Chocolate', 2.00, 'cantidadCake')">Agregar al Carrito</button>
+                                        <button type="button"
+                                                onclick="agregarAlCarrito('Porción de Cake de Chocolate', 2.00, 'cantidadCake')">Agregar
+                                                al Carrito</button>
                                 </article>
                         </div>
                 </section>
