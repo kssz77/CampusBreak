@@ -318,3 +318,39 @@ form {
         transform: translateY(0);
        
 }
+#listaCarrito{
+        background-color: #d6c292;
+        padding: 30px;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #000000;
+        margin: 20px auto;
+        text-align: center;
+
+}
+#contenedorProductos {
+        background-color: #fff3d9;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 15px;
+
+}
+#listaCarrito h2, #carrito h2 {
+        background-color: transparent;
+        padding: 10px 0;
+}
+from select {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: #ffffff;
+}
+.warnings {
+        font-size: 1.1em;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        padding: 5px;
+}

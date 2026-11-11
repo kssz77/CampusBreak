@@ -3,9 +3,75 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
         <title>Carrito de Compras</title>
 </head>
 <body>
+         <nav>
+                <h2>CampusBreak</h2>
+                <div>
+                        <a href="index.html">Inicio</a>
+                        <a href="menu.html">Menú de Productos</a>
+                        <a href="carrito.html">Carrito de Compras</a>
+                        <a href="pedidos.html">Mis Pedidos</a>
+                        <a href="inicioSesion.html">Iniciar Sesión</a>
+                        <a href="registrarse.html">Registrarse</a>
+                </div>
+
+        </nav>
+        <header>
+                <h1>Carrito de Compras</h1>
+        </header>
+        <main> 
+                <section id="listaCarrito">
+                        <h2>Productos en el Carrito</h2>
+                        <div id="contenedorProductos"></div>
+                        <br>
+                        <h3>Total a pagar: $<span id="totalPagar">0.00</span></h3>
+                </section>
+                <br>
+                <form name="carrito" id="carrito">
+                        <h2>Finalizar Compra</h2>
+                        <label for="metodoPago">Seleccione su Método de Pago:</label>
+                        <select id="metodoPago" name="metodoPago" required>
+                                <option value="">-- Seleccione --</option>
+                                <option value="tarjeta">Tarjeta de Crédito / Débito</option>
+                                <option value="efectivo">Efectivo</option>
+                                </select>
+                        <br>
+                        
+                        <label for="numeroTarjeta">Ingrese su Número de Tarjeta:</label>
+                        <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese su Número de Tarjeta" maxlength="16" required>
+                        <br>
+                        <label for="fechaExpiracion">Ingrese la Fecha de Expiración:</label>
+                        <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA" required>
+                        <br>
+                        <label for="codigoSeguridad">Ingrese el Código de Seguridad (CVV):</label>
+                        <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="3 dígitos" maxlength="3" required>
+                        <br>
+                        <button type="submit" id="finalizarCompra">Finalizar Compra</button>
+                        <button type="button" id="cancelarCompra" onclick="window.location.href='menu.html'">Cancelar</button>
+                        <p id="warnings" class="warnings"></p>
+                </form>
+        </main>
+        <footer>
+                <section>
+                        <h2>CampusBreak</h2>
+                        <p>¡Aprovecha tu tiempo, disfruta tu descanso y deja que CampusBreak se encargue de tus pedidos!
+                        </p>
+                </section>
+                <section>
+                        <h2>Contactos</h2>
+                        <p>Teléfono: 123-456-7890</p>
+                        <p>Email: <a href="mailto:info@campusbreak.com">info@campusbreak.com</a></p>
+                        <p>Instagram: @campusbreak</p>
+                </section>
+                <section>
+                        <h2>Ubicación</h2>
+                        <p>Av. de por allá, calle de por acá</p>
+                </section>
+        </footer>
+        <script src="codigo.js"></script>
         
 </body>
 </html>
