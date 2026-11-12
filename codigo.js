@@ -93,7 +93,7 @@ function agregarAlCarrito(nombreProducto, precioProducto, idInput) {
 function mostrarCarrito() {
 
     const contenedor = document.getElementById("contenedorProductos")
-    const totalElemento = document.getElementById("totalaPagar")
+    const totalElemento = document.getElementById("totalPagar")
 
     if (!contenedor) return
 
